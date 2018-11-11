@@ -1,0 +1,30 @@
+class Handphone{
+private String warna;
+private String jenis;
+private int ukuran;
+private int kapasitasbatrai;
+
+public Handphone(String wrna,String jns,int ukrn,int kpstsbtrai){
+this.warna=wrna;
+this.jenis=jns;
+this.ukuran=ukrn;
+this.kapasitasbatrai=kpstsbtrai;
+}
+
+public void tampildataHandphone()
+{
+System.out.println(".......Data Handphone.......");
+System.out.println("Warna Handphone \t \t: "+this.warna);
+System.out.println("Jenis Handphone \t \t: "+this.jenis);
+System.out.println("Ukuran Handphone \t \t: "+this.ukuran+" inch");
+System.out.println("Kapasitas Batrai Handphone \t: "+this.kapasitasbatrai+" mAh");
+    }
+}
+
+public class dataHandphone{
+public static void main(String[] args){
+Handphone hp=new Handphone("Merah","ASUS",5,2660);
+hp.tampildataHandphone();
+    }
+}
+
